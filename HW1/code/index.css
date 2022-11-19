@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3780201 */
+  src: url("//at.alicdn.com/t/c/font_3780201_vpnj6n5lur9.woff2?t=1668820261522")
+      format("woff2"),
+    url("//at.alicdn.com/t/c/font_3780201_vpnj6n5lur9.woff?t=1668820261522")
+      format("woff"),
+    url("//at.alicdn.com/t/c/font_3780201_vpnj6n5lur9.ttf?t=1668820261522")
+      format("truetype");
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* Question1 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box {
+  margin-top: 50px;
+}
+table {
+  border: 2px solid #333;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #333;
+  padding: 5px 30px;
+  text-align: center;
+}
+
+/* Question2 */
+.search input {
+  border: 1px solid #dcdcdc;
+  width: 400px;
+  height: 30px;
+  padding: 5px 35px;
+  border-radius: 20px;
+  transition: 0.3s linear;
+  float: left;
+}
+.search input:focus {
+  width: 500px;
+}
+.search .icon-voice {
+  position: relative;
+  float: left;
+  top: 8px;
+  font-size: 20px;
+  color: cornflowerblue;
+  left: -40px;
+}
+.icon-search {
+  position: relative;
+  float: left;
+  top: 10px;
+  font-size: 20px;
+  right: -30px;
+}
+
+/* Question4 */
+.selector {
+  width: 150px;
+}
