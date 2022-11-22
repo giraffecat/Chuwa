@@ -34,7 +34,7 @@ function format(str) {
   return (
     str
       //replace the non-alphabet characters
-      .replace(/[^a-zA-Z ]/g, "")
+      .replace(/[^a-zA-Z ]/g, " ")
       .split(" ")
       .filter((value) => value != "")
       .join(" ")
@@ -61,7 +61,7 @@ const second = [
 function merge(first, second) {
   //uuid is unique
   //Not change the original arr
-  //double pointer
+  //double pointer (traditional way)
   let ptr1 = 0,
     ptr2 = 0;
   first.sort((a, b) => a.uuid - b.uuid);
