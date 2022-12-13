@@ -18,7 +18,7 @@ function filter(itemsObject) {
 
 function totalValue(itemsObject) {
   return itemsObject.reduce((total, value) => {
-    return (total += value.quantity * value.price);
+    return total + value.quantity * value.price;
   }, 0);
 }
 

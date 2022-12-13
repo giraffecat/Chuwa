@@ -56,8 +56,11 @@ function generateTable(tableInfo) {
     }
     tbl.appendChild(row);
   }
-  const tableNode = document.querySelector(".table");
-  tableNode.appendChild(tbl);
+  const div = document.createElement("div");
+  div.setAttribute("class", "box table");
+  div.appendChild(tbl);
+  const container = document.querySelector(".container");
+  container.appendChild(div);
 }
 
 generateTable(tableInfo);
@@ -76,20 +79,27 @@ function generateOl(list) {
     li.appendChild(liText);
     ol.appendChild(li);
   }
-  const listNode = document.querySelector(".list");
-  listNode.appendChild(ol);
+
+  const div = document.createElement("div");
+  div.setAttribute("class", "box list");
+  div.appendChild(ol);
+  const container = document.querySelector(".container");
+  container.appendChild(div);
 }
 
 function generateUl(list) {
-  const ol = document.createElement("ul");
+  const ul = document.createElement("ul");
   for (let i = 0; i < list.length; i++) {
     const li = document.createElement("li");
     const liText = document.createTextNode(`${list[i]}`);
     li.appendChild(liText);
-    ol.appendChild(li);
+    ul.appendChild(li);
   }
-  const listNode = document.querySelector(".list");
-  listNode.appendChild(ol);
+  const div = document.createElement("div");
+  div.setAttribute("class", "box list");
+  div.appendChild(ul);
+  const container = document.querySelector(".container");
+  container.appendChild(div);
 }
 
 generateOl(list);
@@ -118,8 +128,10 @@ function generateDropDownList(dropDownList) {
     option.appendChild(optionText);
     select.appendChild(option);
   }
-  const selectNode = document.querySelector(".select");
-  selectNode.appendChild(select);
+  const div = document.createElement("div");
+  div.setAttribute("class", "box select");
+  div.appendChild(select);
+  const container = document.querySelector(".container");
+  container.appendChild(div);
 }
-
 generateDropDownList(dropDownList);
